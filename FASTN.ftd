@@ -1,7 +1,7 @@
 -- import: fastn
 
 -- fastn.package: trizwit.github.io/fastnfoliotemp
-favicon: /-/sarvom.github.io/fastnfoliotemplate/favicon.ico
+favicon: /-/trizwit.github.io/fastnfoliotemp/favicon.ico
 
 -- fastn.dependency: fastn-community.github.io/doc-site as doc-site
 -- fastn.dependency: fastn-community.github.io/footer
