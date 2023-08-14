@@ -3,7 +3,7 @@ ftd.image-src logo:
 string logo-text:
 string cta-text-1:
 string cta-text-2:
-
+string cta-text-3:
 
 
 -- ftd.row:
