@@ -1,0 +1,16 @@
+-- import: fastn
+
+-- fastn.package: sarvom.github.io/fastnfoliotemplate
+favicon: /-/sarvom.github.io/fastnfoliotemplate/favicon.ico
+
+-- fastn.dependency: fastn-community.github.io/doc-site as doc-site
+-- fastn.dependency: fastn-community.github.io/footer
+-- fastn.dependency: fastn-community.github.io/roboto-typography
+
+-- fastn.auto-import: sarvom.github.io/fastnfoliotemplate/FASTN/ds
+-- fastn.auto-import: sarvom.github.io/fastnfoliotemplate/assets
+-- fastn.auto-import: doc-site
+
+-- fastn.sitemap:
+
+# Home: index.html
