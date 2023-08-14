@@ -1,12 +1,10 @@
 -- import: fastnui.trizwit.com/UI-Components/Header/header-5 as navbar
--- import: fastnui.trizwit.com/UI-Components/
+-- import: trizwit.github.io/fastnfoliotemp/lib
 
--- navbar.header-5:
-logo: $assets.files.assets.logo.png
+-- lib.header-5:
+logo: $assets.files.assets.logo.jpg
 logo-text: Portfolio
 cta-text-1: Home
 cta-text-2: Second Link
 cta-text-3: Third Link
-cta-text-1-url: Home
-cta-text-2-url: Second Link
-cta-text-3-url: Third Link
+
