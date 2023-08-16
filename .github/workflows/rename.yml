@@ -1,6 +1,6 @@
 name: Rename the project from template
 
-on: [push]
+on: [push, fork]
 
 jobs:
   rename-project:
