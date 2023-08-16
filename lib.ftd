@@ -1,13 +1,94 @@
--- component header-5:
+-- import: sarvom.github.io/holy-angel-typography 
+-- import: shaheen-senpai.github.io/fastn-cs-tail
+
+
+-- component page:
+optional ftd.image-src logo:
+optional string cta-text-1: 
+optional string cta-text-2: 
+optional string cta-text-3: 
+optional string cta-text-4: 
+optional string cta-text-5: 
+optional string cta-text-6: 
+optional string cta-text-7: 
+optional string cta-text-8:   
+optional string cta-text-9:  
+optional string cta-text-10: 
+optional string cta-button-1: 
+optional string cta-button-2: 
+children c:
+
+-- ftd.column:
+width: fill-container
+types: $holy-angel-typography.types
+colors: $fastn-cs-tail.main
+background.linear-gradient: $lg
+
+-- ftd.column:
+width: fill-container
+children: $page.c
+
+-- end: ftd.column
+
+-- footer:
+icon-1: $assets.files.assets.linkedIn.png
+url-1: https://www.linkedin.com/company/trizwit/
+icon-2: $assets.files.assets.twit.svg
+url-2: https://twitter.com/trizwit
+icon-3: $assets.files.assets.github.svg
+url-3: https://github.com/Trizwit
+
+-- end: ftd.column
+
+-- end: page
+
+
+
+
+
+
+
+
+
+-- ftd.linear-gradient lg:
+direction: top-right
+colors: $color-values-2
+
+-- ftd.linear-gradient-color list color-values-2:
+
+-- ftd.linear-gradient-color: #111111
+
+-- ftd.linear-gradient-color: #222222
+
+-- end: color-values-2
+
+
+
+
+
+
+
+
+
+-- component header:
 ftd.image-src logo:
 string logo-text:
 string cta-text-1:
 string cta-text-2:
 string cta-text-3:
-
+optional string cta-text-4:
+optional string cta-text-5:
+optional string cta-text-6:
+string cta-text-1-url:
+string cta-text-2-url:
+string cta-text-3-url:
+optional string cta-text-4-url:
+optional string cta-text-5-url:
+optional string cta-text-6-url:
 
 -- ftd.row:
 width: fill-container
+background.solid: #000000aa
 sticky: true
 
 -- ftd.row:
@@ -20,42 +101,78 @@ align-self: center
 spacing: space-between
 border-radius.px: 20
 
+
 -- ftd.image:
-src: $header-5.logo
+src: $header.logo
 width.fixed.px: 55
 height: auto
 border-radius.px: 20
 margin-vertical.px: 10
 
--- ftd.text: $header-5.logo-text
+-- ftd.text: $header.logo-text
 margin-horizontal.px: 10
 text-align: center
 align-self: center
+color: white
 
 -- ftd.row:
 width: fill-container
 height: fill-container
 align-content: right
 
--- ftd.text: $header-5.cta-text-1
+-- ftd.text: $header.cta-text-1
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
+color: white
+link: $header.cta-text-1-url
 
 
--- ftd.text: $header-5.cta-text-2
+-- ftd.text: $header.cta-text-2
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 0
+color: white
+link: $header.cta-text-2-url
 
 
--- ftd.text: $header-5.cta-text-3
+-- ftd.text: $header.cta-text-3
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
+color: white
+link: $header.cta-text-3-url
+
+-- ftd.text: $header.cta-text-4
+if: { header.cta-text-4 != NULL } 
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 32
+color: white
+link: $header.cta-text-4-url
+
+-- ftd.text: $header.cta-text-5
+if: { header.cta-text-5 != NULL } 
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 32
+color: white
+link: $header.cta-text-5-url
+
+-- ftd.text: $header.cta-text-6
+if: { header.cta-text-6 != NULL } 
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 32
+color: white
+link: $header.cta-text-6-url
+
 
 -- end: ftd.row
 
@@ -63,4 +180,95 @@ margin-horizontal.px: 32
 
 -- end: ftd.row
 
--- end: header-5
+-- end: header
+
+
+
+
+
+
+
+
+
+-- component footer:
+ftd.image-src icon-1:
+string url-1:
+ftd.image-src icon-2:
+string url-2:
+ftd.image-src icon-3:
+string url-3:
+
+-- ftd.column:
+align-self: center
+align-content: center
+width: fill-container
+margin-vertical.vh: 6
+
+-- ftd.row:
+width.fixed.percent: 90
+align-self: center
+align-content: center
+spacing.fixed.px: 24
+padding-bottom.px: 27
+border-bottom-width.px: 2
+
+-- ftd.image:
+src: $footer.icon-1
+height.fixed.px: 32
+width.fixed.px: 32
+link: $footer.url-1
+
+-- ftd.image:
+src: $footer.icon-2
+height.fixed.px: 32
+width.fixed.px: 32
+link: $footer.url-2
+
+-- ftd.image:
+src: $footer.icon-3
+height.fixed.px: 32
+width.fixed.px: 32
+link: $footer.url-3
+
+-- end: ftd.row
+
+-- ftd.row:
+margin-top.vh: 1
+spacing.fixed.vh: 0.9
+
+-- ftd.text: Made with 
+role: $inherited.types.label-large
+style: semi-bold
+color: white
+
+-- ftd.text: FASTN 
+role: $inherited.types.label-large
+style: semi-bold
+color: white
+link: https://fastn.com/
+
+-- ftd.text: by
+role: $inherited.types.label-large
+style: semi-bold
+color: white
+
+-- ftd.text: Trizwit
+role: $inherited.types.label-large
+style: semi-bold
+color: white
+link: https://trizwit.com/
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: footer
+
+
+
+
+
+
+
+
+
