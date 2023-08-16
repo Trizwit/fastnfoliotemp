@@ -12,7 +12,7 @@ Follow these steps to get started with your own Fastn-powered portfolio:
 
 ### 1. Fork this Repository
 
-Click the "Use This Template" button at the right mid-corner of this repository to create your own copy. This will allow you to make changes without affecting the original template.
+Click the `Use This Template` button at the right corner of this repository to create your own copy. This will allow you to make changes without affecting the original template.
 
 ### 2. Clone Your Fork
 
@@ -29,9 +29,9 @@ Replace `repo-name` with your GitHub Repo name.
 
 You can customize your individual portfolio in two ways:
 
-- **Using Pre-Built Components:** Explore the FastnUI library and call pre-built existing components. Edit and style them to match your preferences. [FastnUI Documentation](https://fastnwebframework/docs/fastnui)
+- **Using Pre-Built Components:** Explore the FastnUI library and call pre-built existing components. Edit and style them to match your preferences. [FastnUI](https://fastnui.trizwit.com/)
 
-- **Creating Custom Components:** If you're feeling creative, design your own custom components using the Fastn language. [Fastn Language Guide](https://fastnwebframework/docs/fastn-language)
+- **Creating Custom Components:** If you're feeling creative, design your own custom components using the Fastn language. [Fastn Language Guide](https://fastn.com/components/), [Video Guide](https://youtu.be/DkZEuC0a-Pk)
 
 
 ### 4. Preview Your Changes
@@ -47,7 +47,7 @@ Once you're satisfied with your changes, commit them to your local repository an
 
 ### 6. Submit Your Portfolio
 
-- Post your portfolio site on LinkedIn and other social media handles, tagging [@Fastn](https://twitter.com/FastnWebFramework) and [@Trizwit](https://twitter.com/Trizwit).
+- Post your portfolio site on LinkedIn and other social media handles, tagging [@Fastn]() and [@Trizwit]().
 
 - Share a link to your post in [this Google Form](link-to-gform) to provide us with your portfolio details.
 
@@ -60,8 +60,9 @@ Once you're satisfied with your changes, commit them to your local repository an
 
 Connect with us on social media for updates and to share your portfolio creations!
 
-- Twitter: [@FastnWebFramework](https://twitter.com/FastnWebFramework)
-- LinkedIn: [Fastn Web Framework](https://www.linkedin.com/company/fastn-web-framework)
+- [Twitter:](https://twitter.com/trizwit)
+- [LinkedIn:](https://www.linkedin.com/company/trizwit/)
+- [Discord:](https://discord.com/invite/a7eBUeutWD) 
 
 Happy coding and have fun creating your Fastn-powered portfolio!
 
