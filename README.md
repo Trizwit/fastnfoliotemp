@@ -1,6 +1,6 @@
-# Fastn Web Framework Portfolio Template
+# Fastnfolio
 
-Welcome to the Fastn Web Framework Portfolio Template repository! 🚀
+Welcome to the Fastn Portfolio Template repository! 🚀
 
 ## Introduction
 
@@ -22,12 +22,12 @@ Clone your forked repository to your local machine using Git:
 git clone https://github.com/your-username/repo-name.git
 ```
 
-Replace `your-username` with your GitHub username.
-Replace `repo-name` with your GitHub Repo name.
+Replace `your-username` with your GitHub username.   
+Replace `repo-name` with your GitHub Repo name.   
 
 ### 3. Customize Your Portfolio
 
-Navigate to the `index` directory and start editing the files to customize your portfolio. You can modify the content, styling, and even add new sections as needed.
+Navigate to the `index` folder and start editing the files to customize your portfolio. You can modify the content, styling, and even add new sections as needed.
 
 ### 4. Preview Your Changes
 
