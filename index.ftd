@@ -1,10 +1,28 @@
 -- import: fastnui.trizwit.com/UI-Components/Header/header-5 as navbar
+-- import: fastnui.trizwit.com/UI-Components/Hero/hero-1 as hero
 -- import: trizwit.github.io/fastnfoliotemp/lib
 
--- lib.header-5:
+-- lib.page:
+
+-- lib.header:
 logo: $assets.files.assets.logo.jpg
 logo-text: Portfolio
 cta-text-1: Home
-cta-text-2: Second Link
-cta-text-3: Third Link
+cta-text-2: About
+cta-text-3: Resume
+cta-text-1-url: index.html
+cta-text-2-url: index.html#about
+cta-text-3-url: index.html
 
+-- hero.hero-1: I'm John Doe
+cta-button-1: Resume
+link-1: https://www.resume.com/
+cta-button-2: Schedule Meeting
+link-2: https://calendly.com/
+cover: $assets.files.assets.ape-1.jpg
+
+Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. 
+Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.
+
+
+-- end: lib.page
