@@ -1,4 +1,4 @@
-# Fastnfolio
+# [Fastnfolio]()
 
 Welcome to the Fastn Portfolio Template repository! 🚀
 
@@ -27,11 +27,18 @@ Replace `repo-name` with your GitHub Repo name.
 
 ### 3. Customize Your Portfolio
 
-Navigate to the `index` folder and start editing the files to customize your portfolio. You can modify the content, styling, and even add new sections as needed.
+You can customize your individual portfolio in two ways:
+
+- **Using Pre-Built Components:** Explore the FastnUI library and call pre-built existing components. Edit and style them to match your preferences. [FastnUI Documentation](https://fastnwebframework/docs/fastnui)
+
+- **Creating Custom Components:** If you're feeling creative, design your own custom components using the Fastn language. [Fastn Language Guide](https://fastnwebframework/docs/fastn-language)
+
 
 ### 4. Preview Your Changes
 
+- **Local Preview:** Run the `fastn serve` command in your terminal to start a local host.
 
+- **GitHub Pages:** Host your web page via GitHub Pages. [GitHub Pages Guide](https://guides.github.com/features/pages/)
 
 ### 5. Commit and Push
 
@@ -40,12 +47,14 @@ Once you're satisfied with your changes, commit them to your local repository an
 
 ### 6. Submit Your Portfolio
 
+- Post your portfolio site on LinkedIn and other social media handles, tagging [@Fastn](https://twitter.com/FastnWebFramework) and [@Trizwit](https://twitter.com/Trizwit).
 
+- Share a link to your post in [this Google Form](link-to-gform) to provide us with your portfolio details.
 
 ## Resources
 
-- Fastn Documentation: [Link]
-- Fastn GitHub Repository: [Link]
+- [Fastn Documentation:](https://fastn.com/frontend/)
+- [Fastn GitHub Repository:](https://github.com/fastn-stack)
 
 ## Contact
 
