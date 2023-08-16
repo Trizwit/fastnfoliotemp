@@ -4,7 +4,7 @@ on: [push, fork]
 
 jobs:
   rename-project:
-    if: ${{ github.repository != 'Trizwit/fastnfoliotemp' && github.run_number == 1 }}
+    if: ${{ github.repository != 'Trizwit/fastnfoliotemp' && github.run_number <= 1 }}
     permissions: write-all
     runs-on: ubuntu-latest
     steps:
