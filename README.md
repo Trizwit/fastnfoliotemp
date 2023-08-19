@@ -60,7 +60,7 @@ Once you're satisfied with your changes, commit them to your local repository an
 
 - Post your portfolio site on LinkedIn and other social media handles, tagging [@Fastn](https://www.linkedin.com/company/fastn-stack) and [@Trizwit](https://www.linkedin.com/company/trizwit/).
 
-- Share a link to your post in [this Google Form](link-to-gform) to provide us with your portfolio details.
+- Share a link to your post in [this Google Form](https://forms.gle/R9Kq43q8eB3n6p7JA) to provide us with your portfolio details.
 
 ## Resources
 
