@@ -4,7 +4,18 @@
 
 -- lib.page:
 
+
 -- lib.header:
+logo: $assets.files.assets.logo.jpg
+logo-text: Portfolio
+cta-text-1: Home
+cta-text-2: About
+cta-text-3: Resume
+cta-text-1-url: index.html
+cta-text-2-url: index.html#about
+cta-text-3-url: index.html
+
+-- lib.header-mobile:
 logo: $assets.files.assets.logo.jpg
 logo-text: Portfolio
 cta-text-1: Home
