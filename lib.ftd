@@ -87,6 +87,7 @@ optional string cta-text-5-url:
 optional string cta-text-6-url:
 
 -- ftd.row:
+if: { ftd.device == "desktop" }
 width: fill-container
 background.solid: #000000aa
 sticky: true
@@ -181,6 +182,7 @@ link: $header.cta-text-6-url
 -- end: ftd.row
 
 -- end: header
+
 
 
 
@@ -297,6 +299,7 @@ $on-click$: $ftd.set-bool($a = $header-mobile.hamburger-menu, v = false)
 -- end: ftd.row
 
 -- end: header-mobile
+
 
 
 
