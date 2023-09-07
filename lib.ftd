@@ -190,6 +190,126 @@ link: $header.cta-text-6-url
 
 
 
+-- component header-mobile:
+ftd.image-src logo:
+string logo-text:
+string cta-text-1:
+string cta-text-2:
+string cta-text-3:
+optional string cta-text-4:
+optional string cta-text-5:
+optional string cta-text-6:
+string cta-text-1-url:
+string cta-text-2-url:
+string cta-text-3-url:
+optional string cta-text-4-url:
+optional string cta-text-5-url:
+optional string cta-text-6-url:
+boolean $hamburger-menu: false
+
+
+-- ftd.row:
+if: { ftd.device == "mobile" }
+width: fill-container
+background.solid: #000000aa
+sticky: true
+id: menu
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+padding-horizontal.px: 50
+margin-vertical.px: 20
+margin-horizontal.px: 20
+align-self: center
+border-radius.px: 20
+
+
+-- ftd.image:
+src: $header-mobile.logo
+width.fixed.px: 55
+height: auto
+border-radius.px: 20
+margin-vertical.px: 10
+
+-- ftd.text: $header-mobile.logo-text
+margin-horizontal.px: 10
+text-align: center
+align-self: center
+color: white
+
+-- ftd.image: $assets.files.assets.hamburger-menu.svg
+height.fixed.px: 32
+align-self: center
+margin-horizontal.px: 10
+margin-left.percent: 50
+$on-click$: $ftd.set-bool($a = $header-mobile.hamburger-menu, v = true)
+
+-- end: ftd.row
+
+
+-- ftd.row:
+if: { header-mobile.hamburger-menu }
+width: fill-container
+height: hug-content
+padding.px: 20
+background.solid: #000000
+sticky: true
+anchor.id: menu
+
+
+-- ftd.text: $header-mobile.cta-text-1
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 32
+color: white
+link: $header-mobile.cta-text-1-url
+
+
+-- ftd.text: $header-mobile.cta-text-2
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 0
+color: white
+link: $header-mobile.cta-text-2-url
+
+
+-- ftd.text: $header-mobile.cta-text-3
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 32
+color: white
+link: $header-mobile.cta-text-3-url
+
+-- ftd.image: $assets.files.assets.cross.svg
+height.fixed.px: 32
+align-self: center
+margin-left.px: 20
+$on-click$: $ftd.set-bool($a = $header-mobile.hamburger-menu, v = false)
+
+-- end: ftd.row
+
+
+
+-- end: ftd.row
+
+-- end: header-mobile
+
+
+
+
+
+
+
+
+
+
+
+
+
 -- component footer:
 ftd.image-src icon-1:
 string url-1:
