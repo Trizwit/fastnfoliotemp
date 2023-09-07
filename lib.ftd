@@ -192,7 +192,6 @@ link: $header.cta-text-6-url
 
 
 
-
 -- component header-mobile:
 ftd.image-src logo:
 string logo-text:
@@ -300,7 +299,6 @@ $on-click$: $ftd.set-bool($a = $header-mobile.hamburger-menu, v = false)
 -- end: ftd.row
 
 -- end: header-mobile
-
 
 
 
