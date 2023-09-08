@@ -86,100 +86,32 @@ optional string cta-text-4-url:
 optional string cta-text-5-url:
 optional string cta-text-6-url:
 
--- ftd.row:
+-- ftd.column:
+width: fill-container
+
+-- header-mobile:
+if: { ftd.device == "mobile" }
+logo: $header.logo
+logo-text: $header.logo-text
+cta-text-1: $header.cta-text-1
+cta-text-2: $header.cta-text-2
+cta-text-3: $header.cta-text-3
+cta-text-1-url: $header.cta-text-1-url
+cta-text-2-url: $header.cta-text-2-url
+cta-text-3-url: $header.cta-text-3-url
+
+-- header-desktop:
 if: { ftd.device == "desktop" }
-width: fill-container
-background.solid: #000000aa
-sticky: true
+logo: $header.logo
+logo-text: $header.logo-text
+cta-text-1: $header.cta-text-1
+cta-text-2: $header.cta-text-2
+cta-text-3: $header.cta-text-3
+cta-text-1-url: $header.cta-text-1-url
+cta-text-2-url: $header.cta-text-2-url
+cta-text-3-url: $header.cta-text-3-url
 
--- ftd.row:
-width: fill-container
-height: hug-content
-padding-horizontal.px: 50
-margin-vertical.px: 20
-margin-horizontal.px: 20
-align-self: center
-spacing: space-between
-border-radius.px: 20
-
-
--- ftd.image:
-src: $header.logo
-width.fixed.px: 55
-height: auto
-border-radius.px: 20
-margin-vertical.px: 10
-
--- ftd.text: $header.logo-text
-margin-horizontal.px: 10
-text-align: center
-align-self: center
-color: white
-
--- ftd.row:
-width: fill-container
-height: fill-container
-align-content: right
-
--- ftd.text: $header.cta-text-1
-role: $inherited.types.label-large
-text-align: center
-margin-vertical.px: 28
-margin-horizontal.px: 32
-color: white
-link: $header.cta-text-1-url
-
-
--- ftd.text: $header.cta-text-2
-role: $inherited.types.label-large
-text-align: center
-margin-vertical.px: 28
-margin-horizontal.px: 0
-color: white
-link: $header.cta-text-2-url
-
-
--- ftd.text: $header.cta-text-3
-role: $inherited.types.label-large
-text-align: center
-margin-vertical.px: 28
-margin-horizontal.px: 32
-color: white
-link: $header.cta-text-3-url
-
--- ftd.text: $header.cta-text-4
-if: { header.cta-text-4 != NULL } 
-role: $inherited.types.label-large
-text-align: center
-margin-vertical.px: 28
-margin-horizontal.px: 32
-color: white
-link: $header.cta-text-4-url
-
--- ftd.text: $header.cta-text-5
-if: { header.cta-text-5 != NULL } 
-role: $inherited.types.label-large
-text-align: center
-margin-vertical.px: 28
-margin-horizontal.px: 32
-color: white
-link: $header.cta-text-5-url
-
--- ftd.text: $header.cta-text-6
-if: { header.cta-text-6 != NULL } 
-role: $inherited.types.label-large
-text-align: center
-margin-vertical.px: 28
-margin-horizontal.px: 32
-color: white
-link: $header.cta-text-6-url
-
-
--- end: ftd.row
-
--- end: ftd.row
-
--- end: ftd.row
+-- end: ftd.column
 
 -- end: header
 
@@ -207,15 +139,13 @@ string cta-text-3-url:
 optional string cta-text-4-url:
 optional string cta-text-5-url:
 optional string cta-text-6-url:
-boolean $hamburger-menu: false
+boolean $open: false
 
 
--- ftd.row:
-if: { ftd.device == "mobile" }
+-- ftd.column:
 width: fill-container
 background.solid: #000000aa
 sticky: true
-id: menu
 
 -- ftd.row:
 width: fill-container
@@ -240,25 +170,24 @@ text-align: center
 align-self: center
 color: white
 
--- ftd.image: $assets.files.assets.hamburger-menu.svg
+-- ftd.image: 
+src: $assets.files.assets.hamburger-menu.svg
 height.fixed.px: 32
 align-self: center
 margin-horizontal.px: 10
 margin-left.percent: 50
-$on-click$: $ftd.set-bool($a = $header-mobile.hamburger-menu, v = true)
+$on-click$: $ftd.set-bool($a = $header-mobile.open, v = true)
 
 -- end: ftd.row
 
 
--- ftd.row:
-if: { header-mobile.hamburger-menu }
+-- ftd.column:
+if: { header-mobile.open }
 width: fill-container
 height: hug-content
 padding.px: 20
 background.solid: #000000
 sticky: true
-anchor.id: menu
-
 
 -- ftd.text: $header-mobile.cta-text-1
 role: $inherited.types.label-large
@@ -267,7 +196,6 @@ margin-vertical.px: 28
 margin-horizontal.px: 32
 color: white
 link: $header-mobile.cta-text-1-url
-
 
 -- ftd.text: $header-mobile.cta-text-2
 role: $inherited.types.label-large
@@ -286,17 +214,16 @@ margin-horizontal.px: 32
 color: white
 link: $header-mobile.cta-text-3-url
 
--- ftd.image: $assets.files.assets.cross.svg
+-- ftd.image: 
+src: $assets.files.assets.cross.svg
 height.fixed.px: 32
 align-self: center
 margin-left.px: 20
-$on-click$: $ftd.set-bool($a = $header-mobile.hamburger-menu, v = false)
+$on-click$: $ftd.set-bool($a = $header-mobile.open, v = false)
 
--- end: ftd.row
+-- end: ftd.column
 
-
-
--- end: ftd.row
+-- end: ftd.column
 
 -- end: header-mobile
 
@@ -304,6 +231,120 @@ $on-click$: $ftd.set-bool($a = $header-mobile.hamburger-menu, v = false)
 
 
 
+
+
+
+
+-- component header-desktop:
+ftd.image-src logo:
+string logo-text:
+string cta-text-1:
+string cta-text-2:
+string cta-text-3:
+optional string cta-text-4:
+optional string cta-text-5:
+optional string cta-text-6:
+string cta-text-1-url:
+string cta-text-2-url:
+string cta-text-3-url:
+optional string cta-text-4-url:
+optional string cta-text-5-url:
+optional string cta-text-6-url:
+
+-- ftd.row:
+width: fill-container
+background.solid: #000000aa
+sticky: true
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+padding-horizontal.px: 50
+margin-vertical.px: 20
+margin-horizontal.px: 20
+align-self: center
+spacing: space-between
+border-radius.px: 20
+
+
+-- ftd.image:
+src: $header-desktop.logo
+width.fixed.px: 55
+height: auto
+border-radius.px: 20
+margin-vertical.px: 10
+
+-- ftd.text: $header-desktop.logo-text
+margin-horizontal.px: 10
+text-align: center
+align-self: center
+color: white
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+align-content: right
+
+-- ftd.text: $header-desktop.cta-text-1
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 32
+color: white
+link: $header-desktop.cta-text-1-url
+
+
+-- ftd.text: $header-desktop.cta-text-2
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 0
+color: white
+link: $header-desktop.cta-text-2-url
+
+
+-- ftd.text: $header-desktop.cta-text-3
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 32
+color: white
+link: $header-desktop.cta-text-3-url
+
+-- ftd.text: $header-desktop.cta-text-4
+if: { header-desktop.cta-text-4 != NULL } 
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 32
+color: white
+link: $header-desktop.cta-text-4-url
+
+-- ftd.text: $header-desktop.cta-text-5
+if: { header-desktop.cta-text-5 != NULL } 
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 32
+color: white
+link: $header-desktop.cta-text-5-url
+
+-- ftd.text: $header-desktop.cta-text-6
+if: { header-desktop.cta-text-6 != NULL } 
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 32
+color: white
+link: $header-desktop.cta-text-6-url
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: header-desktop
 
 
 
@@ -332,7 +373,7 @@ width.fixed.percent: 90
 align-self: center
 align-content: center
 spacing.fixed.px: 24
-padding-bottom.px: 27
+padding-bottom.px: 24
 border-bottom-width.px: 2
 
 -- ftd.image:
