@@ -4,7 +4,6 @@
 
 -- lib.page:
 
-
 -- lib.header:
 logo: $assets.files.assets.logo.jpg
 logo-text: Portfolio
