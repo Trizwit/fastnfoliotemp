@@ -1,6 +1,6 @@
 -- import: fastn
 
--- fastn.package: nithinlycanz.github.io/portfolio 
+-- fastn.package: nithinlycanz.github.io/Portfolio 
 favicon: /-/nithinlycanz.github.io/portfolio/favicon.ico
 
 -- fastn.dependency: fastn-community.github.io/doc-site as doc-site
@@ -12,7 +12,7 @@ favicon: /-/nithinlycanz.github.io/portfolio/favicon.ico
 
 
 
--- fastn.auto-import: nithinlycanz.github.io/portfolio/FASTN/ds
--- fastn.auto-import: nithinlycanz.github.io/portfolio/assets
+-- fastn.auto-import: nithinlycanz.github.io/Portfolio/FASTN/ds
+-- fastn.auto-import: nithinlycanz.github.io/Portfolio/assets
 -- fastn.auto-import: doc-site
 
